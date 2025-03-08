@@ -1,0 +1,113 @@
+/* General Styles */
+.billing-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.billing-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.billing-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.billing-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.billing-inputs input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 5px);
+}
+
+@media (max-width: 480px) {
+    .billing-inputs input {
+        width: 100%;
+    }
+}
+
+/* Buttons */
+.add-button, .invoice-button {
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover, .invoice-button:hover {
+    background-color: #0056b3;
+}
+
+/* Table */
+.billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.billing-table th, .billing-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.billing-table th {
+    background-color: #f1f1f1;
+}
+
+/* Total */
+.billing-total {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .billing-card {
+        width: 95%;
+        padding: 15px;
+    }
+    .billing-title {
+        font-size: 20px;
+    }
+    .add-button, .invoice-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .billing-table th, .billing-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .billing-total {
+        font-size: 16px;
+    }
+}
